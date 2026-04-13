@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SajiloStream - Making Websites Easy</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            font-family: sans-serif;
+            overflow-x: hidden;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1920px;
+        }
+
+        /* Responsive Image Handling */
+        .landing-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .desktop-view { display: block; }
+        .mobile-view { display: none; }
+
+        @media (max-width: 768px) {
+            .desktop-view { display: none; }
+            .mobile-view { display: block; width: 100%; }
+        }
+
+        /* Social Media Footer */
+        .footer {
+            padding: 20px 0 40px 0;
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-content">
+        <img src="website landing - 1920px.svg" alt="SajiloStream Desktop" class="landing-img desktop-view">
+        
+        <img src="website landing - 375px.svg" alt="SajiloStream Mobile" class="landing-img mobile-view">
+    </div>
+
+    <div class="footer">
+        <a href="https://www.facebook.com/profile.php?id=61573268789673" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/sajilostream/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" class="social-icon">
+        </a>
+    </div>
+
+</body>
+</html>
